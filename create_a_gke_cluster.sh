@@ -33,6 +33,7 @@ kubectl expose deployment nginx --port 80 --type LoadBalancer
 # list services
 kubectl get services
 
+# scale the service
 kubectl scale deployment nginx --replicas 3
 
 kubectl get services
