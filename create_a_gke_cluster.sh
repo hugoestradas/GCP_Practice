@@ -22,4 +22,13 @@ gcloud container clusters create hugospracticegke --zone $MY_ZONE --num-nodes 2
 kubectl version
 
 # run a webserver in a cluster
-kubectl run nginx --image=nginx:1.10.0
+kubectl nginx --image=nginx:1.10.0
+
+# confirm the pod is running
+kubectl get pods
+
+# expose the deployment previously created
+kubectl expose deployment nginx --port 80 --type LoadBalancer
+
+# list services
+kubectl get services
