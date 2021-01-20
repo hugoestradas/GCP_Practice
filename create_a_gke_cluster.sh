@@ -21,3 +21,5 @@ gcloud container clusters create hugospracticegke --zone $MY_ZONE --num-nodes 2
 # check the version that the cluster is running
 kubectl version
 
+# run a webserver in a cluster
+kubectl run nginx --image=nginx:1.10.0
