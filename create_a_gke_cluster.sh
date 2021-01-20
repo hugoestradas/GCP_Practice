@@ -38,3 +38,6 @@ kubectl scale deployment nginx --replicas 3
 
 # list the active services
 kubectl get services
+
+# delete the project
+gcloud projects delete hugosgcppractice
