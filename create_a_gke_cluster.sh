@@ -36,4 +36,5 @@ kubectl get services
 # scale the service
 kubectl scale deployment nginx --replicas 3
 
+# list the active services
 kubectl get services
