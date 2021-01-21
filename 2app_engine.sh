@@ -12,3 +12,6 @@ cat app.yaml
 
 # running the app locally in the cloud shell
 dev_appserver.py ./app.yaml
+
+# deploy the app
+gcloud app deploy app.yaml index.yaml
